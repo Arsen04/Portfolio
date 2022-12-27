@@ -1,0 +1,208 @@
+  /*************************************************/
+ /*********************LOAD************************/
+/*************************************************/
+#allPage{
+    opacity: 0;
+}
+body, html{
+    height: 100%;
+    text-align: center;
+}
+body{
+    background: linear-gradient(to right, #04040B, #000000, #65656D)!important;
+}
+#loader{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 4px solid rgb(255, 255, 255);
+    top: 50%;
+    animation: loader 2s infinite ease;
+}
+#loaderInner{
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(180deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loaderInner{
+  0%{
+    height: 0%;
+  }
+  25%{
+    height: 0%;
+  }
+  50%{
+    height: 100%;
+  }
+  75%{
+    height: 100%;
+  }
+  100%{
+    height: 0%;
+  }
+}
+  /*************************************************/
+ /*********************HEAD************************/
+/*************************************************/
+*{
+    /* cursor: none; */
+}
+html{
+    /* cursor:none; */
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    background: linear-gradient(to right, #04040B, #000000, #65656D)!important;
+    width: 100%;
+    height: 100vh;
+    overflow-y: visible;
+    /* cursor: none; */
+}
+#header{
+    width: 100%;
+    height: 15%;
+    font-family: Montserrat, Arial, sans-serif;
+    text-transform: uppercase;
+    position: fixed;
+}
+.topCol{
+    width: 90%;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    left: 7%;
+}
+  /*************************************************/
+ /*********************MENU************************/
+/*************************************************/
+ul{
+    list-style-type:none;
+}
+li{
+    float: left;
+    padding: 50px 80px;
+    opacity: 0.6;
+    transition: 0.3s;
+    /* cursor:none; */
+}
+li:hover{
+    background-image: url(image/main-menu-stroke.svg);
+    background-repeat: no-repeat;
+    opacity: 1;
+    /* cursor: none; */
+}
+a{
+    text-decoration:none;
+    color: aliceblue;
+    /* cursor: none; */
+}
+#logo{
+    height: 130px;
+    width: 310px;
+    float: left;
+}
+  /*************************************************/
+ /*********************LANG************************/
+/*************************************************/
+#lang{
+    float: right;
+    padding: 40px 80px;
+    font-family: Montserrat, Arial, sans-serif;
+    text-transform: uppercase;
+}
+#langBut, #en, #ru, #de{
+    font-family: Montserrat, Arial, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background: #00000000;
+    border: none;
+}
+#langBut{
+    font-size: 15px;
+}
+#en, #ru, #de{
+    padding: 7px 11px;
+}
+  /*************************************************/
+ /*******************CURSOR************************/
+/*************************************************/
+#cursor{
+    z-index: 999;
+    position: fixed;
+    background:  radial-gradient(circle, rgb(215 47 30) 0%, rgb(195 31 31) 100%);
+    /* background: radial-gradient(circle, rgba(119,8,255,1) 0%, rgba(255,255,255,1) 100%); */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+}
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* #cursor:before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,70,166,1) 35%, rgba(0,212,255,1) 100%);
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+} */
+
+
+  /*************************************************/
+ /**********************MID************************/
+/*************************************************/
+
+h1{
+    font-family: 'kelson-sans-bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 100px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    animation: mymove 5s;
+}
+span{
+    animation-timing-function: ease;
+}
+@keyframes mymove{
+    from {left: 0px;}
+    to {left: 50%;}
+}
