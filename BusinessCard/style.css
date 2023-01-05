@@ -1,17 +1,17 @@
   /*************************************************/
  /*********************LOAD************************/
 /*************************************************/
-#allPage{
+#allPage {
     opacity: 0;
 }
-body, html{
+body, html {
     height: 100%;
     text-align: center;
 }
-body{
+body {
     background: linear-gradient(to right, #04040B, #000000, #65656D)!important;
 }
-#loader{
+#loader {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -20,7 +20,7 @@ body{
     top: 50%;
     animation: loader 2s infinite ease;
 }
-#loaderInner{
+#loaderInner {
     vertical-align: top;
     display: inline-block;
     width: 100%;
@@ -28,51 +28,51 @@ body{
     animation: loader-inner 2s infinite ease-in;
 }
 
-@keyframes loader{
-  0%{
+@keyframes loader {
+  0% {
     transform: rotate(0deg);
   }
-  25%{
+  25% {
     transform: rotate(180deg);
   }
-  50%{
+  50% {
     transform: rotate(180deg);
   }
-  75%{
+  75% {
     transform: rotate(360deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
 
-@keyframes loaderInner{
-  0%{
+@keyframes loaderInner {
+  0% {
     height: 0%;
   }
-  25%{
+  25% {
     height: 0%;
   }
-  50%{
+  50% {
     height: 100%;
   }
-  75%{
+  75% {
     height: 100%;
   }
-  100%{
+  100% {
     height: 0%;
   }
 }
   /*************************************************/
  /*********************HEAD************************/
 /*************************************************/
-*{
+* {
     /* cursor: none; */
 }
-html{
+html {
     /* cursor:none; */
 }
-body{
+body {
     margin: 0;
     padding: 0;
     color: aliceblue;
@@ -82,46 +82,45 @@ body{
     overflow-y: visible;
     /* cursor: none; */
 }
-#header{
+#header {
     width: 100%;
     height: 15%;
     font-family: Montserrat, Arial, sans-serif;
     text-transform: uppercase;
     position: fixed;
 }
-.topCol{
-    width: 90%;
+.topCol {
+    width: 100%;
     position: fixed;
     text-align: center;
     align-items: center;
     margin: auto;
-    left: 7%;
 }
   /*************************************************/
  /*********************MENU************************/
 /*************************************************/
-ul{
+ul {
     list-style-type:none;
 }
-li{
+li {
     float: left;
-    padding: 50px 80px;
+    padding: 50px 75px;
     opacity: 0.6;
     transition: 0.3s;
     /* cursor:none; */
 }
-li:hover{
-    background-image: url(image/main-menu-stroke.svg);
+li:hover {
+    /* background-image: url(image/main-menu-stroke.svg); */
     background-repeat: no-repeat;
     opacity: 1;
     /* cursor: none; */
 }
-a{
+a {
     text-decoration:none;
     color: aliceblue;
     /* cursor: none; */
 }
-#logo{
+#logo {
     height: 130px;
     width: 310px;
     float: left;
@@ -129,29 +128,29 @@ a{
   /*************************************************/
  /*********************LANG************************/
 /*************************************************/
-#lang{
+#lang {
     float: right;
-    padding: 40px 80px;
+    padding: 40px 10px;
     font-family: Montserrat, Arial, sans-serif;
     text-transform: uppercase;
 }
-#langBut, #en, #ru, #de{
+#langBut, #en, #ru, #de {
     font-family: Montserrat, Arial, sans-serif;
     text-transform: uppercase;
     color: white;
     background: #00000000;
     border: none;
 }
-#langBut{
+#langBut {
     font-size: 15px;
 }
-#en, #ru, #de{
+#en, #ru, #de {
     padding: 7px 11px;
 }
   /*************************************************/
  /*******************CURSOR************************/
 /*************************************************/
-#cursor{
+#cursor {
     z-index: 999;
     position: fixed;
     background:  radial-gradient(circle, rgb(215 47 30) 0%, rgb(195 31 31) 100%);
@@ -166,15 +165,15 @@ a{
     animation: colors 5s infinite;
     transform: translate(-50%, -50%);
 }
-@keyframes colors{
-    0%{
+@keyframes colors {
+    0% {
         filter: hue-rotate(0deg);
-    }100%{
+    }100% {
         filter: hue-rotate(360deg);
     }
 }
 
-/* #cursor:before{
+/* #cursor:before {
     content: '';
     position: absolute;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,70,166,1) 35%, rgba(0,212,255,1) 100%);
@@ -189,8 +188,43 @@ a{
   /*************************************************/
  /**********************MID************************/
 /*************************************************/
+p {
+  position: absolute;
+  top: 28%;
+  font-size: 60px;
+  font-family: fangsong;
+  width: 80%;
+}
+#fs {
+  position: absolute;
+  letter-spacing: -3px;
+  animation: strelka 6s;
+  left: 69%;
+}
+#cs {
+  position: absolute;
+  left: 72.5%;
+  animation: strelka2 6s;
+}
+/* #fs:hover {
+  left: 73%;
+}
+#cs:hover {
+  animation: strelka4 4s;
+} */
+@keyframes strelka {
+  0% {left: 0px;}
+  25% {left: 69%;}
+  50% {left: 65%;}
+  75% {left: 70%;}
+  100% {left: 69%;}
+}
+@keyframes strelka2 {
+  from {left: 0px;}
+  to {left: 72.5%;}
+}
 
-h1{
+h1 {
     font-family: 'kelson-sans-bold', sans-serif;
     text-transform: uppercase;
     font-size: 100px;
@@ -198,11 +232,183 @@ h1{
     top: 40%;
     left: 50%;
     animation: mymove 5s;
+    text-shadow: 5px 0px 11px rgb(255 255 255 / 10%), 10px 9px 0px rgb(0 0 0 / 0%), 6px 12px 0px rgb(0 0 0 / 5%);
 }
-span{
+span {
     animation-timing-function: ease;
 }
-@keyframes mymove{
+@keyframes mymove {
     from {left: 0px;}
     to {left: 50%;}
+}
+#img1 {
+  width: 70%;
+  position: absolute;
+  left: 7%;
+  top: 23%;
+  animation: think 5s;
+  animation-timing-function: ease;
+}
+@keyframes think {
+  from {
+    left: 0px;}
+  to {
+    left: 7%;}
+}
+  /*************************************************/
+ /**********************RESP***********************/
+/*************************************************/
+
+
+
+@media screen and (max-width: 1060px) {
+  #lang {
+    display: none;
+  }
+  li {
+    display: none;
+  }
+  li:hover {
+    display: none;
+  }
+  #logo {
+    float: left;
+  }
+  #img{
+    position: fixed;
+    left: 15%;
+  }
+  p {
+    position: absolute;
+    top: 66%;
+    font-size: 60px;
+    font-family: fangsong;
+    width: 80%;
+  }
+  .show{
+    display: none;
+  }
+  /***************Menu size >1000******************/
+  .menuCont {
+    display: block;
+    cursor: pointer;
+    float: right;
+    padding: 30px;
+  }
+  .topCol{
+    position: relative;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  h1 {
+    font-size: 80px;
+    top: 40%;
+    left: 28%;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 1060px) {
+  #lang {
+    padding: 20px 3px;
+    font-size: 15px;
+  }
+  li {
+    padding: 30px 12px;
+    font-size: 15px;
+    background-image: none;
+    /* cursor: none; */
+  }
+  #langBut {
+      font-size: 14px;
+  }
+  #en, #ru, #de {
+    padding: 7px 0px;
+  }
+  #logo {
+    height: 96px;
+    width: 260px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1250px) and (min-width: 1200px) {
+  #lang {
+    padding: 20px 0px;
+  }
+  li {
+    padding: 30px 10px;
+    /* cursor: none; */
+  } 
+  h1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1320px) and (min-width: 1250px) {
+  #header {
+    width: 100%;
+    height: 15%;
+  }
+  .topCol {
+    width: 100%;
+  }
+  li {
+    padding: 30px 20px;
+  }
+  #lang {
+    padding: 20px 5px;
+  }
+  #logo {
+    height: 110px;
+    width: 310px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  #en, #ru, #de {
+    padding: 6px 7px;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 1320px) {
+  #lang {
+    padding: 40px 0px;
+  }
+  li {
+    padding: 49px 25px;
+    /* cursor: none; */
+  } 
+}
+@media screen and (max-width: 1600px) and (min-width: 1400px) {
+  #lang {
+    padding: 40px 10px;
+  }
+  li {
+    padding: 50px 30px;
+    /* cursor: none; */
+  }
+}
+@media screen and (max-width: 1910px) and (min-width: 1600px) {
+  #lang {
+    padding: 40px 10px;
+  }
+  li {
+    padding: 50px 60px;
+    /* cursor: none; */
+  }
 }

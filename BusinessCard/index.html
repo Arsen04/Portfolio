@@ -12,36 +12,42 @@
     <body onload="loadPage()">
         <div id="loader"><span id="loaderInner"></span></div>
         <div id="allPage">
-            <header id="header">        
+            <header id="header">
+                <div class="menuCont" onclick="menuBar(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>        
                 <div class="topCol">
                     <div id="logo"><img id="logo" src="image/visit5.png"></div>
-                    <div class="menu">
+                    <div class="menu" id="menu">
                         <ul>
-                            <li><a href="http://">О Нас</a></li>
-                            <li><a href="http://">Наши проекты</a></li>
-                            <li><a href="http://">Заказы</a></li>
-                            <li><a href="http://">Контакты</a></li>
+                            <li><a href="#" key="about" class="changeFunc">О Нас</a></li>
+                            <li><a href="#" key="projects" class="changeFunc">Наши проекты</a></li>
+                            <li><a href="#" key="ord" class="changeFunc">Заказы</a></li>
+                            <li><a href="#" key="conus" class="changeFunc">Связь с Нами</a></li>
                         </ul>
                     </div>
                     <div id="lang">
                         <div id="butStyle">
-                            <button id="langBut">Язык</button>
-                            <button id="en"><img src="image/en.png" alt="en" height="20px" width="30px"></button>
-                            <button id="ru"><img src="image/ru1.png" alt="ru" height="20px" width="30px"></button>
-                            <button id="de"><img src="image/de.png" alt="de" height="20px" width="30px"></button>
+                            <button id="langBut" class="changeFunc" key="langchange">Язык</button>
+                            <button id="ru" class="changeFunc translate"><img src="image/ru1.png" alt="ru" height="20px" width="30px"></button>
+                            <button id="en" class="changeFunc translate"><img src="image/en.png" alt="en" height="20px" width="30px"></button>
+                            <button id="de" class="changeFunc translate"><img src="image/de.png" alt="de" height="20px" width="30px"></button>
                         </div>
                     </div>
                 </div>    
             </header>
-                <div class="midCol">
-                    <div id="">
-                        <h1>
-                            <span>Креатив -</span>  </br>
-                            <span>наше Всё!</span> 
-                        </h1>
-                    </div>
+            <div class="midCol">
+                <div id="">
+                    <p><b id="fs">--</b><b id="cs">></b></p>
+                    <img src="image/th1.png" id="img1">
+                    <h1>
+                        <span class="changeFunc" key="mainInf">Креатив -</span>  </br>
+                        <span class="changeFunc" key="mainInf2">наше Всё!</span> 
+                    </h1>
                 </div>
-            <footer></footer>
+            </div>
         </div>
         <div id="cursor"></div>
 
@@ -49,5 +55,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="script.js"></script>
         <script src="cursor.js"></script>
+        <script src="jquery.min.js"></script>
     </body>
 </html>
